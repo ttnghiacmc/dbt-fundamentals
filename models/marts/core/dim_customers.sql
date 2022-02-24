@@ -26,19 +26,6 @@ customer_orders as (
     group by 1
 
 ),
-customer_payments as (
-
-    select
-        customer_id,
-
-        sum(amount) as amount
-
-    from payments
-
-    group by 1
-
-),
-
 final as (
 
     select
