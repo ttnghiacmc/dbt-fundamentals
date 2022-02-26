@@ -6,3 +6,12 @@ sources:
     schema: stripe
     tables:
       - name: payment
+      
+models:
+  - name: stg_payments
+    description: Staged payment data from our jaffle shop app.
+    columns:
+    - name: order_id
+      description: First name.
+    - name: amount
+      description: Last name.
